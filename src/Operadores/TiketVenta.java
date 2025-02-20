@@ -21,15 +21,26 @@ public class TiketVenta {
         double precioJugoManzana =sc.nextDouble();
 
 
+        // descuento
+
+        System.out.print("algun descuento (%)? ");
+        int descuentoPorcentaje = sc.nextInt();
+
+
         double subtotal = precioleche + precioAzucar + precioArroz + precioJugoManzana;
 
-        double impuesto = subtotal * 0.21;
+        double descuento = subtotal * (descuentoPorcentaje/100.0);
 
-        double total = impuesto + subtotal;
+        double subtotalConDescuento = subtotal - descuento;
+
+        double impuesto = subtotalConDescuento * 0.21;
+
+        double total = impuesto + subtotalConDescuento;
 
         System.out.println();
         System.out.println("subtotal = " + subtotal);
         System.out.println("impuesto = " + impuesto);
+        System.out.println("descuento = " + descuento);
         System.out.println("El total de tu compra es (con IVA): " + total);
 
 
