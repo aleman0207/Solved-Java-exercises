@@ -9,7 +9,6 @@ public class IntroducirDinamicaArreglos {
         Scanner sc = new Scanner(System.in);
 
 
-
         // Declaracion de nuesto arreglo
 
         System.out.print("Proporciona el largo del arreglo: ");
