@@ -1,3 +1,5 @@
+package Principal_java;
+
 public class MetodosDeCadenas {
     public static void main(String[] args) {
         //metodos de cadenas

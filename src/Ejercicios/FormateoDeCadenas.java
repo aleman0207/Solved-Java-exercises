@@ -4,9 +4,9 @@ public class FormateoDeCadenas {
 
     public static void main(String[] args) {
 
-        // Formateo de Cadenas
+        // Formateo de Principal_java.Cadenas
 
-        System.out.println("*** Formateo de Cadenas ***");
+        System.out.println("*** Formateo de Principal_java.Cadenas ***");
 
         String nombre = "Luis";
         int edad = 28;

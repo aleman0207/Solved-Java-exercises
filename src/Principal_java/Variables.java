@@ -1,6 +1,8 @@
+package Principal_java;
+
 public class Variables {
     public static void main(String[] args) {
-        //Variables
+        //Principal_java.Variables
 
         int edad = 31;
         double precio = 300.40;

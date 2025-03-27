@@ -1,3 +1,5 @@
+package Principal_java;
+
 public class MasConcatenacionCadenas {
     public static void main(String[] args) {
         // Mas formas de concatenar cadenas en java

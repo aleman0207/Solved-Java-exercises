@@ -1,3 +1,5 @@
+package Principal_java;
+
 public class BusquedaSubcadenas {
     public static void main(String[] args) {
 

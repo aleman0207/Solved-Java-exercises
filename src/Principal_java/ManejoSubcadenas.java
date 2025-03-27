@@ -1,3 +1,5 @@
+package Principal_java;
+
 public class ManejoSubcadenas {
     public static void main(String[] args) {
         // Manejon de subcadena

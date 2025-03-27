@@ -3,44 +3,43 @@ package ClaseObjeto;
 public class Aritmetica {
 
     // Atributos
-    int operando1;
-    int operando2;
+   private int operando1;
+   private int operando2;
 
 
     // Constructor
-    public Aritmetica(int op1, int op2){
+    public Aritmetica(int operando1, int operando2 ){
 
-        operando1 = op1;
-        operando2 = op2;
+        this.operando1 = operando1;
+        this.operando2 = operando2;
 
     }
 
     // Metodos
-    void sumar (){
-        int resultado = operando1 + operando2;
+    public void sumar (){
+        int resultado = this.operando1 + this.operando2;
         System.out.println("Resultado de la suma: " + resultado);
     }
 
-    void resta (){
-        int resultado = operando1 - operando2;
+    public void resta (){
+        int resultado = this.operando1 - this.operando2;
         System.out.println("Resultado de la resta: " + resultado);
     }
-    public static void main(String[] args) {
 
-        System.out.println("*** Calculadora de numero ***");
-
-        Aritmetica aritmetica1 = new Aritmetica(5, 7);
-
-        // Primer Objeto
-//        aritmetica1.operando1 = 5;
-//        aritmetica1.operando2 = 7;
-        aritmetica1.sumar();
-        aritmetica1.resta();
-
-
-
-
-
+    public int getOperando1() {
+        return this.operando1;
     }
 
+    public void setOperando1(int operando1) {
+        this.operando1 = operando1;
+    }
+
+
+    public int getOperando2() {
+        return this.operando2;
+    }
+
+    public void setOperando2(int operando2) {
+        this.operando2 = operando2;
+    }
 }

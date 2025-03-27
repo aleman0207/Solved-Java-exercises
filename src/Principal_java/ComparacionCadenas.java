@@ -1,3 +1,5 @@
+package Principal_java;
+
 public class ComparacionCadenas  {
     public static void main(String[] args) {
         // Comparacion de cadena (pool de cadenas)

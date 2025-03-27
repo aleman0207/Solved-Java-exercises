@@ -1,3 +1,5 @@
+package Principal_java;
+
 import java.util.Scanner;
 
 public class SistemaDeEmpleado {

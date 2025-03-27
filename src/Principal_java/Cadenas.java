@@ -1,3 +1,5 @@
+package Principal_java;
+
 public class Cadenas {
 
     public static void main(String[] args) {
@@ -10,7 +12,7 @@ public class Cadenas {
         System.out.println("cadena2 = " + cadena2);
         String cadena3 = cadena1 + " " + cadena2;
         System.out.println("cadena3 = " + cadena3);
-        // Cadenas multipes
+        // Principal_java.Cadenas multipes
         String cadena4 = """
                 Esta es una cadena 
                 multilinia

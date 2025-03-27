@@ -1,3 +1,5 @@
+package Principal_java;
+
 public class IndicesCadena  {
 
     public static void main(String[] args) {
