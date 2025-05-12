@@ -54,7 +54,13 @@ class MaquinaSnacks extends  Snacks {
          var salir = false;
          switch (opcion){
               case 1 -> comprarSnack(consola,productos);
-             // case 2 ->
+              case 2 -> mostrartiket(productos);
+              case 3 -> agregarSnack(consola);
+              case 4 -> {
+                  System.out.println("Regresa pronto");
+                  salir = true;
+              }
+             default -> System.out.println("Opcion invalida" + opcion);
          }
          return salir;
       }
@@ -77,5 +83,31 @@ class MaquinaSnacks extends  Snacks {
 
 
       }
+
+
+        private static void mostrartiket(List<Snack> productos){
+            var tikect = "*** Tikect de venta ***";
+            var total = 0.0;
+            for (var prodcuto: productos){
+                tikect += "\n\t- " + prodcuto.getNombre() + " - $" + prodcuto.getPrecio();
+                total += prodcuto.getPrecio();
+            }
+            tikect += "\n\tTotal -> $" + total;
+            System.out.println(tikect);
+        }
+
+
+        private  static void agregarSnack (Scanner consola){
+            System.out.print("Nombre del Snack nuvo que se quiere agregar: ");
+            var nombre = consola.nextLine();
+            System.out.print("Precio del snack: ");
+            var precio = Double.parseDouble(consola.nextLine());
+            Snacks.agregarSnacks(new Snack(nombre, precio));
+            System.out.println("Tu snack se agregado correctamente");
+            Snacks.mostrarSnacks();
+        }
+
+
+
 
  }

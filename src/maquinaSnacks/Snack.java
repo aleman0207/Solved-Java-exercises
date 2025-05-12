@@ -16,7 +16,7 @@ public class Snack  implements Serializable {
 
 
     public Snack (){
-        this.idSncack= ++ Snack.contadorSnacks;
+        this.idSncack = ++ Snack.contadorSnacks;
 
     }
 
